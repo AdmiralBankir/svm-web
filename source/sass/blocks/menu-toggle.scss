@@ -1,0 +1,50 @@
+.menu-toggle {
+  display: none;
+  outline: none;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: opacity ease-in 0.3s;
+
+  @include tablet-max {
+    display: block;
+  }
+
+  &__one,
+  &__two,
+  &__three {
+      width: 100%;
+      height: 6px;
+      margin: 6px auto;
+      background: $mid-black-color;
+      transition-duration: 0.5s;
+  }
+
+  &--on {
+    position: relative;
+    z-index: 22;
+
+    & > div {
+      background: #ffffff;
+    }
+      .menu-toggle__one {
+          transform: rotate(45deg) translate(7px, 7px);
+      }
+
+      .menu-toggle__two {
+          display: none;
+      }
+
+      .menu-toggle__three {
+          transform: rotate(-45deg) translate(1px, -2px);
+      }
+  }
+}
+
+@include desktop-only {
+  .menu-toggle:hover > div {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,8 @@
+.module-block:hover {
+  animation: rotate 2s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  from {transform: rotateX(0);}
+  to {transform: rotateX(360deg);}
+  }
