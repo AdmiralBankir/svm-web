@@ -1,0 +1,15 @@
+@import "normalize.scss";
+@import "mixin.scss";
+@import "variables.scss";
+@import "blocks/center-wrapper.scss";
+@import "blocks/header.scss";
+@import "blocks/module-block.scss";
+@import "blocks/main-banner.scss";
+@import "blocks/menu-toggle.scss";
+
+
+body {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+}

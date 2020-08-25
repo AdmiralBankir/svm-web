@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <meta name="keywords" content="модульные бани Брянск, купить баню Брянск, беседки Брянск">
+  <title>СВМ</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header">
+    <div class="center-wrapper">
+      <div class="header__top">
+        <button class="header__menu-btn menu-toggle" type="button" aria-label="Кнопка открытия меню навигации по сайту">
+          <div class="menu-toggle__one"></div>
+          <div class="menu-toggle__two"></div>
+          <div class="menu-toggle__three"></div>
+        </button>
+
+        <a class="header__main-link">
+          <img width="125" height="125" src="../img/logo-black.png" alt="Логотип СВ Модуль">
+        </a>
+
+        <div class="header__contacts-wrapper">
+          <a class="header__geo-link" href="#">
+            <svg class="header__contacts-logo" width="24" height="24">
+              <use xlink:href="#icon-map-pin"></use>
+            </svg>
+            <span>
+              Брянская обл.,<br> с. Супонево, ул.Фрунзе, 55, к. 1
+            </span>
+          </a>
+
+          <a href="tel:+79103302815" class="header__link-wrapper">
+            <svg class="header__contacts-logo" width="24" height="24">
+              <use xlink:href="#icon-phone-call"></use>
+            </svg>
+            <div>
+              <span class="header__tel-link">+7 (910) 330-28-15</span>
+              <span class="header__link-desc">Звоните в любой день с 10 до 22 </span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--sub">
+              <a class="header__nav-link">Садовые постройки</a>
+              <ul class="header__nav-sub-list">
+                <li>
+                  <a class="header__nav-link" href="#">Беседки</a>
+                </li>
+                <li>
+                  <a class="header__nav-link" href="#">Туалеты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item header__nav-item--sub">
+              <a class="header__nav-link">Для птиц и животных</a>
+              <ul class="header__nav-sub-list">
+                <li>
+                  <a class="header__nav-link"  href="#">Вольеры для собак</a>
+                </li>
+                <li>
+                  <a class="header__nav-link"  href="#">Курятники</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Бани</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Элементы декора</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="main-banner">
+      <div class="center-wrapper">
+        <h1>
+          <span>СВ модуль</span>
+          <span>производство и обслуживание</span>
+          <span>модульных
+            конструкций в
+            Брянске</span>
+        </h1>
+      </div>
+    </div>
+  </main>
 </body>
+
+<script src="js/script.js"></script>
+
 </html>
