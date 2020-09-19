@@ -6,10 +6,23 @@
 @import "blocks/module-block.scss";
 @import "blocks/main-banner.scss";
 @import "blocks/menu-toggle.scss";
+@import "blocks/products.scss";
+@import "blocks/offer-timing.scss";
+@import "blocks/video-review.scss";
 
 
 body {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

@@ -44,6 +44,16 @@
   @include tablet-max {
     place-self: center;
   }
+
+  @include mobile-max {
+    width: 100px;
+    height: 100px;
+
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 .header__top {
@@ -55,7 +65,7 @@
   @include tablet-max {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: max-content 1fr max-content;
   }
 }
 
@@ -69,12 +79,6 @@
   text-align: right;
   text-decoration: none;
   position: relative;
-
-  &::before {
-    background: center no-repeat url("../img/phone-call.svg");
-    top: 10px;
-    left: -50px;
-  }
 }
 
 .header__contacts-logo {
@@ -109,6 +113,10 @@
 
 .header__geo-link .header__contacts-logo {
   margin-right: 20px;
+
+  @include tablet-max {
+    margin-right: 0;
+  }
 }
 
 .header__link-desc {
@@ -123,7 +131,6 @@
 .header__tel-link,
 .header__link-desc {
   color: #000000;
-  background: #ffffff;
   display: block;
 }
 
@@ -137,11 +144,22 @@
     top: 0;
     left: 0;
     min-height: 100vh;
+    min-height: calc(var(--vh, 1vh)*100);
     background-color: transparentize($color: $mid-black-color, $amount: 0);
     padding: 200px 0 65px 111px;
     box-sizing: border-box;
     transform: translateX(-150%);
     transition: transform $time-transition $func-transition;
+  }
+
+  @include mobile-max {
+    min-width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
+    padding: 150px 0 10vh 0;
+    position: fixed;
   }
 }
 
@@ -164,12 +182,19 @@
   @include tablet-max {
     display: block;
   }
+
+  @include mobile-max {
+    flex-grow: 0;
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
 
 .header__nav-item {
   position: relative;
   flex-grow: 1;
   text-align: center;
+  cursor: pointer;
 
   @include tablet-max {
     text-align: left;
@@ -178,21 +203,26 @@
 
 .header__nav-item--sub {
   position: relative;
+
   @include tablet-max {
     &::after {
-    position: absolute;
-    content: '';
-    width: 4px;
-    height: 4px;
-    border: 1.2px solid #ffffff;
-    border-bottom: none;
-    border-left: none;
-    transition: transform .3s ease-out;
-    right: 20px;
-    top: 30px;
-    transform: rotate(135deg);
+      position: absolute;
+      content: '';
+      width: 4px;
+      height: 4px;
+      border: 1.2px solid #ffffff;
+      border-bottom: none;
+      border-left: none;
+      transition: transform .3s ease-out;
+      right: 20px;
+      top: 30px;
+      transform: rotate(135deg);
     }
   }
+}
+
+.header__nav-item--active::after {
+  transform: rotate(-45deg);
 }
 
 .header__nav-link {
@@ -208,16 +238,22 @@
     padding-right: 50px;
     font-weight: bold;
   }
+
+  @include mobile-max {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 @include desktop-only {
+
   .header__nav-item:hover>a,
-  .header__nav-sub-list > li:hover>a{
+  .header__nav-sub-list>li:hover>a {
     color: #000000;
     background-color: #ffffff;
   }
 
-  .header__nav-item--sub:hover > .header__nav-sub-list {
+  .header__nav-item--sub:hover>.header__nav-sub-list {
     visibility: visible;
   }
 }
@@ -238,6 +274,16 @@
     display: block;
     width: 48px;
     height: 48px;
+  }
+
+  @include mobile-max {
+    width: 40px;
+    height: 40px;
+
+    &>svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -294,4 +340,16 @@
 .header__nav-sub-list .header__nav-link {
   font-size: 20px;
   font-weight: normal;
+
+  @include mobile-max {
+    font-size: 17px;
+    line-height: 10px;
+  }
+}
+
+.header--main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
