@@ -15,7 +15,7 @@
     <include src="build/img/sprite_auto.svg"></include>
   </div>
 
-  <header class="header">
+  <header class="header header--main">
     <div class="center-wrapper">
       <div class="header__top">
         <button class="header__menu-btn menu-toggle" type="button" aria-label="Кнопка открытия меню навигации по сайту">
@@ -68,10 +68,10 @@
               <a class="header__nav-link">Для птиц и животных</a>
               <ul class="header__nav-sub-list">
                 <li>
-                  <a class="header__nav-link"  href="#">Вольеры для собак</a>
+                  <a class="header__nav-link" href="#">Вольеры для собак</a>
                 </li>
                 <li>
-                  <a class="header__nav-link"  href="#">Курятники</a>
+                  <a class="header__nav-link" href="#">Курятники</a>
                 </li>
               </ul>
             </li>
@@ -98,6 +98,145 @@
         </h1>
       </div>
     </div>
+    <section class="products">
+      <div class="center-wrapper">
+        <h2>Наши работы</h2>
+        <ul class="products_list">
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <img width="240" height="180" src="./img/products-item-1@1x.jpg"
+                  srcset="./img/products-item-1@2x.jpg 2x" alt="Фото собранной бани">
+              </picture>
+
+              <div class="products__label">
+                <p class="products__name">Баня Стандарт 6м </p>
+                <p class="products__cost">162 000 руб</p>
+              </div>
+
+              <p class="products__description">
+                Каркасная модульная баня 6х2,3х2,4м. 3 отделения: раздевалка, мойка, парилка.
+              </p>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <img width="240" height="180" src="./img/products-item-1@1x.jpg"
+                  srcset="./img/products-item-1@2x.jpg 2x" alt="Фото собранной бани">
+              </picture>
+
+              <div class="products__label">
+                <p class="products__name">Баня Стандарт 6м </p>
+                <p class="products__cost">162 000 руб</p>
+              </div>
+
+              <p class="products__description">
+                Каркасная модульная баня 6х2,3х2,4м. 3 отделения: раздевалка, мойка, парилка.
+              </p>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <img width="240" height="180" src="./img/products-item-1@1x.jpg"
+                  srcset="./img/products-item-1@2x.jpg 2x" alt="Фото собранной бани">
+              </picture>
+
+              <div class="products__label">
+                <p class="products__name">Баня Стандарт 6м </p>
+                <p class="products__cost">162 000 руб</p>
+              </div>
+
+              <p class="products__description">
+                Каркасная модульная баня 6х2,3х2,4м. 3 отделения: раздевалка, мойка, парилка.
+              </p>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <img width="240" height="180" src="./img/products-item-1@1x.jpg"
+                  srcset="./img/products-item-1@2x.jpg 2x" alt="Фото собранной бани">
+              </picture>
+
+              <div class="products__label">
+                <p class="products__name">Баня Стандарт 6м </p>
+                <p class="products__cost">162 000 руб</p>
+              </div>
+
+              <p class="products__description">
+                Каркасная модульная баня 6х2,3х2,4м. 3 отделения: раздевалка, мойка, парилка.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="offer-timing">
+      <div class="center-wrapper">
+        <h2>Как происходит заказ</h2>
+        <ol class="offer-timing__list">
+          <li>
+            <svg class="offer-timing__icon" width="60" height="60">
+              <use xlink:href="#icon-brief"></use>
+            </svg>
+            <p class="offer-timing__date">1 день</p>
+            <p class="offer-timing__text">
+              Выбираем готовый проект, оговариваем пожелания, заключаем договор.
+            </p>
+          </li>
+
+          <li>
+            <svg class="offer-timing__icon offer-timing__icon--knock" width="60" height="60">
+              <use xlink:href="#icon-hammer"></use>
+            </svg>
+            <p class="offer-timing__date">3-4 недели</p>
+            <p class="offer-timing__text">
+              Мы изготавливаем баню на своей базе, чтобы не мусорить и не шуметь у вас на участке.
+            </p>
+          </li>
+
+          <li>
+            <svg class="offer-timing__icon" width="60" height="60">
+              <use xlink:href="#icon-home"></use>
+            </svg>
+            <p class="offer-timing__date">1 день</p>
+            <p class="offer-timing__text">
+              Привозим и устанавливаемм готовую баню на вашей территории.
+            </p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <section class="video-review">
+      <div class="center-wrapper">
+        <h2 class="visually-hidden">Видео обзор бани</h2>
+
+        <div class="video-review__text">
+          <p class="video-review__text-garant">Даём гарантию 1 год на все виды работ</p>
+          <p class="video-review__text-desc">
+            Делаем бани по проверенным типовым проектам.
+            Это отработанные годами технологии, которая позволяют нам давать гарантию на все наши изделия.
+          </p>
+          <figure>
+            <iframe class="video-review__media" width="792" height="446"
+              src="https://www.youtube.com/embed/6wh66N6JROQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <figcaption>Обзор каркасной бани «Комфорт» 6м на 2,35м</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 

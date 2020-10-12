@@ -1,17 +1,21 @@
 'use strict';
 
 var headerNav = document.querySelector('.header__nav');
+var navList = headerNav.querySelector('.header__nav-list');
 var headerMenuToggle = document.querySelector('.header__menu-btn');
 var navLinkSubs = document.querySelectorAll('.header__nav-item--sub a');
 
-var onMenuClick = function() {
+var onMenuClick = function () {
   headerNav.classList.toggle('header__nav--active');
   headerMenuToggle.classList.toggle('menu-toggle--on');
 };
 
 var onSubLinkClick = (link) => {
-  var subList = link.parentNode.querySelector('.header__nav-sub-list');
+  var subItem = link.parentNode;
+  var subList = subItem.querySelector('.header__nav-sub-list');
+
   link.classList.toggle('header__nav-link--active');
+  subItem.classList.toggle('header__nav-item--active');
 
   var isOpened = link.classList.contains('header__nav-link--active');
 
@@ -25,7 +29,10 @@ var onSubLinkClick = (link) => {
 };
 
 if (headerNav && headerMenuToggle) {
-    headerMenuToggle.addEventListener('click', onMenuClick);
+  headerMenuToggle.addEventListener('click', (evt) => {
+    evt.stopImmediatePropagation();
+    onMenuClick();
+  });
 }
 
 if (navLinkSubs) {
@@ -37,11 +44,19 @@ if (navLinkSubs) {
 }
 
 document.addEventListener('click', (evt) => {
-  var target = evt.target;
-  var isHeaderNav = headerNav == target;
-  console.log(isHeaderNav)
-  var isMenuActive = headerNav.classList.contains('header__nav--active');
-  if(!isHeaderNav && !isMenuActive) {
+  var target = evt.target.closest('nav');
+  var isHeaderNav = headerNav === target;
+  var isActive = headerNav.classList.contains('header__nav--active');
+  if (!isHeaderNav && isActive) {
     onMenuClick();
   }
+});
+
+
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  var vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
