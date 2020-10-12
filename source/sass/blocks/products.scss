@@ -45,6 +45,11 @@
   color: $gold-color;
   margin-top: 18px;
   margin-bottom: 12px;
+
+  @include mobile-max {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .products__name {
@@ -53,6 +58,11 @@
   line-height: 27px;
   margin: 0;
   margin-bottom: 5px;
+
+  @include mobile-max {
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .products__cost {
