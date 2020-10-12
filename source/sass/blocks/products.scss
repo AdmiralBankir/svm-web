@@ -71,12 +71,17 @@
   line-height: 18px;
   color: #ffffff;
   width: 240px;
+
+  @include mobile-max {
+    font-size: 16px;
+    line-height: 22px;
+    width: auto;
+  }
 }
 
-// Images
 .products__item img {
   @include mobile-max {
-    width: 90%;
+    width: 100%;
     object-fit: cover;
   }
 }
