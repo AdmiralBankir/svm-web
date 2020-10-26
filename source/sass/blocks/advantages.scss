@@ -1,0 +1,128 @@
+.advantages {
+  background-color: #232124;
+  padding-top: 50px;
+  padding-bottom: 89px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+// Label
+.advantages__label {
+  background-color: $gold-color;
+  padding: 40px;
+
+  @include mobile-max {
+    padding: 30px;
+  }
+}
+
+.advantages__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 34px;
+  color: #232124;
+
+  @include mobile-max {
+    font-size: 27px;
+    line-height: 27px;
+  }
+}
+
+.advantages__desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 27px;
+  color: #000000;
+
+  @include mobile-max {
+    font-size: 18px;
+  }
+}
+
+.advantages__name,
+.advantages__desc {
+  margin: 0;
+}
+
+.advantages__name {
+  margin-bottom: 20px;
+}
+
+.advantages__img-wrapper {
+  @include mobile-max {
+    width: 100%;
+  }
+}
+
+.advantages__img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+
+  @include mobile-max {
+    height: 262px;
+  }
+}
+
+// Layout
+.advantages__grid {
+  --img-height: 524px;
+  --img-width: 360px;
+  --gap: 20px;
+  display: grid;
+  gap: var(--gap);
+  grid-auto-flow: dense;
+  grid-template-rows: repeat(auto-fit, minmax(calc(var(--img-height) * 0.5), 1fr));
+  grid-template-columns: var(--img-width) repeat(2, calc((100% - var(--img-width) - 2 * var(--gap)) * 0.5));
+
+  @include tablet-max {
+    --img-width: 260px;
+    grid-template-columns: var(--img-width) 1fr;
+  }
+
+  @include mobile-max {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__img-wrapper {
+  grid-row: span 2;
+}
+
+.advantages__label--two-column {
+  grid-column: span 2;
+
+  @include tablet-max {
+    grid-column: span 1;
+  }
+}
+
+.advantages__label--two-column-tablet {
+  @include tablet-max {
+    grid-column: span 2;
+  }
+}
+
+.advantages__img-wrapper--column-end {
+  grid-column-end: -1;
+}
+
+.advantages__img-wrapper--oversize {
+  grid-column: span 2;
+
+  @include tablet-max {
+    grid-row-start: 3;
+  }
+}
+
+.advantages__img-wrapper--oversize + .advantages__label {
+  grid-row: span 2;
+}
+
