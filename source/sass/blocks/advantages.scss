@@ -15,10 +15,16 @@
 .advantages__label {
   background-color: $gold-color;
   padding: 40px;
+  transition: transform ease-in .3s;
+  cursor: pointer;
 
   @include mobile-max {
     padding: 30px;
   }
+}
+
+.advantages__label:hover {
+  transform: translateY(-15px);
 }
 
 .advantages__name {

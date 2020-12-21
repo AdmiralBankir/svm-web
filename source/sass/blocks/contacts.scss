@@ -1,0 +1,142 @@
+.contacts {
+  padding-top: 61px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+
+  @include tablet-max {
+    padding-top: 35px;
+  }
+}
+
+.contacts__main {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile-max {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+// Title
+.contacts h2 {
+  margin-bottom: 45px;
+  color: #000000;
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 44px;
+  color: #000000;
+}
+
+// VK
+.contacts__vk {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include mobile-max {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__vk iframe,
+.contacts__vk-widget {
+  width: 100% !important;
+
+  @include mobile-max {
+    width: auto !important;
+  }
+}
+
+// Link list
+.contacts__list-wrapper {
+  flex-basis: 50%;
+  margin-right: 20px;
+  margin-top: 65px;
+
+  @include tablet-max {
+    display: flex;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  @include mobile-max {
+    margin: 0;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include tablet-max {
+    justify-content: space-evenly;
+  }
+
+  @include mobile-max {
+    display: grid;
+  }
+}
+
+.contacts__item {
+  background-color: $gold-color;
+  padding: 20px;
+  width: 50%;
+  transition: transform ease-in .3s,
+              opacity ease-in .3s;
+
+  @include tablet-max {
+    width: auto;
+  }
+}
+
+.contacts__item:nth-child(2n) {
+  @include desktop-only {
+    align-self: flex-end;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.contacts__item--vk {
+  @include desktop-only {
+    transform: translateX(-40px);
+  }
+}
+
+.contacts__item--email {
+  @include desktop-only {
+    transform: translateX(40px);
+  }
+}
+
+.contacts__item:hover {
+  opacity: 0.7;
+  transform: translateY(-15px);
+}
+
+.contacts__item a {
+  text-decoration: none;
+  display: block;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+// SVG icons
+.contacts__list svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}

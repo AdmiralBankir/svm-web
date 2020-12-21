@@ -1,5 +1,7 @@
 'use strict';
 
+// Menu
+
 var headerNav = document.querySelector('.header__nav');
 var navList = headerNav.querySelector('.header__nav-list');
 var headerMenuToggle = document.querySelector('.header__menu-btn');
@@ -52,6 +54,7 @@ document.addEventListener('click', (evt) => {
   }
 });
 
+// ControlVH
 
 var vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -60,4 +63,3 @@ window.addEventListener('resize', () => {
   var vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-
