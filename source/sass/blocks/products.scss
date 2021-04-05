@@ -1,6 +1,6 @@
 // Section
 .products {
-  background-color: black;
+  background-color: $mid-grey-color;
   padding-top: 47px;
   padding-bottom: 60px;
 }
@@ -21,9 +21,32 @@
   }
 }
 
-.products__item > a {
+.products__item>a {
   text-decoration: none;
   display: block;
+}
+
+.products__item {
+  padding: 10px;
+  transition: linear box-shadow 0.3s;
+  --hover-color: #f1c40f;
+}
+
+.products__item--gardens {
+  --hover-color: #668e8d;
+}
+
+.products__item--animals {
+  --hover-color: #8e663c;
+}
+
+.products__item--decor {
+  --hover-color: #8b591c;
+}
+
+.products__item:hover {
+  box-shadow: 0 0 10px 10px var(--hover-color);
+  cursor: pointer;
 }
 
 // Label
@@ -76,8 +99,6 @@
 }
 
 .products__item img {
-  @include mobile-max {
-    width: 100%;
-    object-fit: cover;
-  }
+  width: 100%;
+  object-fit: cover;
 }

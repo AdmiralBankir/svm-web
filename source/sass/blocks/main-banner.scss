@@ -9,9 +9,19 @@
   @include tablet-max {
     margin-top: 0;
   }
+
+  @include mobile-max {
+    @media (orientation: portrait) {
+      background-position-x: -170px;
+    }
+  }
 }
 
-.main-banner h1{
+.main-banner--gardens {
+  background-image: url("../img/summerhouse-11@1x.jpg");
+}
+
+.main-banner h1 {
   font-size: 44px;
   line-height: 60px;
   color: #000000;

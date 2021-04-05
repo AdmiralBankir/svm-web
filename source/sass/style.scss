@@ -3,6 +3,7 @@
 @import "variables.scss";
 @import "blocks/typography.scss";
 @import "blocks/center-wrapper.scss";
+@import "blocks/popup.scss";
 @import "blocks/header.scss";
 @import "blocks/module-block.scss";
 @import "blocks/main-banner.scss";
@@ -12,13 +13,25 @@
 @import "blocks/video-review.scss";
 @import "blocks/advantages.scss";
 @import "blocks/contacts.scss";
-@import "blocks/cuboid.scss";
+@import "blocks/footer.scss";
+@import "blocks/popup-item.scss";
+@import "blocks/overlay.scss";
+@import "blocks/swiper.scss";
+@import "blocks/gallery.scss";
+@import "blocks/offer-form.scss";
+@import "blocks/message.scss";
+@import "blocks/loader.scss";
+
 
 
 body {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
+}
+
+.body--overflow {
+  overflow: hidden;
 }
 
 .visually-hidden {

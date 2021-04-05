@@ -1,0 +1,47 @@
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: $black-popup-color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message__text {
+  margin: 0;
+  color: $gold-color;
+  font-size: 20px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.message__icon {
+  width: 96px;
+  height: 96px;
+  align-self: center;
+  transform: translateY(-50px);
+}
+
+.message__icon-success {
+  fill: $gold-color;
+}
+
+.message__icon-error {
+  fill: $red-accent-color;
+}
+
+.message.success .message__icon-error {
+  display: none;
+}
+
+.message.error .message__icon-success {
+  display: none;
+}
+
+.message.error .message__text {
+  color: $red-accent-color;
+}

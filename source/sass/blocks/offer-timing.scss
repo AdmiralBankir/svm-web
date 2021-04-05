@@ -51,20 +51,6 @@
   flex-direction: column;
 }
 
-.offer-timing__list > li:not(:last-child) {
-  // &::after {
-  //   position: absolute;
-  //   content: '';
-  //   width: 15vw;
-  //   height: 30px;
-  //   background-image: url('../img/arrow.png');
-  //   background-repeat: no-repeat;
-  //   background-size: 100% 30px;
-  //   top: 30px;
-  //   left: 120px;
-  // }
-}
-
 // Text
 .offer-timing__date,
 .offer-timing__text {
@@ -99,11 +85,11 @@
 }
 
 .offer-timing__icon--knock {
-  animation: knock 4s infinite ease-in-out;
+  animation: knock 12s infinite ease-in-out;
 }
 
 @keyframes knock {
   0% {transform: rotate(0);}
-  50% {transform: rotate(45deg);}
+  50% {transform: rotate(3600deg);}
   100% {transform: rotate(0);}
   }
