@@ -22,6 +22,9 @@ var galleryZoomBtn =
   <svg class="gallery__icon-zoom" width="24" height="24" viewBox="0 0 24 24">
     <use xlink:href="#icon-zoom"></use>
   </svg>
+  <svg class="gallery__icon-zoom gallery__icon-zoom--min" width="24" height="24" viewBox="0 0 24 24">
+    <use xlink:href="#icon-zoom-min"></use>
+  </svg>
 </button>
 `;
 

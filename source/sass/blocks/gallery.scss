@@ -15,6 +15,22 @@
   background-repeat: no-repeat;
 }
 
+.gallery__icon-zoom--min {
+  display: none;
+}
+
+.gallery--zoomed .gallery__icon-zoom {
+  display: none;
+}
+
+.gallery--zoomed .gallery__icon-zoom {
+  fill: #fff;
+}
+
+.gallery--zoomed .gallery__icon-zoom--min {
+  display: block;
+}
+
 .gallery-top {
   height: 80%;
   width: 100%;
