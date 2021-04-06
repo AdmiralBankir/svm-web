@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  height: calc(var(--vh, 1vh)*100);
+  // height: calc(var(--vh, 1vh)*100);
   width: 100vw;
 
   @include tablet-max {
