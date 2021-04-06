@@ -244,18 +244,18 @@
   }
 }
 
-.header__nav-link--current {
-  @include desktop-only {
-    font-weight: bold;
-    color: $mid-black-color;
-    background-color: #fff;
-  }
+// .header__nav-link--current {
+//   @include desktop-only {
+//     font-weight: bold;
+//     color: $mid-black-color;
+//     background-color: #fff;
+//   }
 
-  @include mobile-max {
-    color: $gold-color;
-    text-decoration: underline;
-  }
-}
+//   @include mobile-max {
+//     color: $gold-color;
+//     text-decoration: underline;
+//   }
+// }
 
 @include desktop-only {
 
@@ -350,6 +350,7 @@
     max-height: 0;
     visibility: visible;
     overflow: hidden;
+    background: none;
   }
 }
 
