@@ -74,6 +74,10 @@
   border: none;
   background: none;
   outline: none;
+
+  @include mobile-max {
+    display: none;
+  }
 }
 
 .gallery__btn:hover .gallery__icon-arrow {
