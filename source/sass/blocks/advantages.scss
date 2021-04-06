@@ -1,7 +1,7 @@
 .advantages {
   background-color: $mid-grey-color;
   padding-top: 50px;
-  padding-bottom: 89px;
+  padding-bottom: 60px;
 }
 
 .advantages__list {
@@ -95,6 +95,13 @@
   @include mobile-max {
     display: flex;
     flex-wrap: wrap;
+    gap: 0;
+  }
+}
+
+@include mobile-max {
+  .advantages__grid > div {
+    margin-bottom: 20px;
   }
 }
 
