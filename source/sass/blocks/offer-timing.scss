@@ -85,11 +85,11 @@
 }
 
 .offer-timing__icon--knock {
-  animation: knock 12s infinite ease-in-out;
+  animation: knock 1.5s infinite ease-in-out;
 }
 
 @keyframes knock {
   0% {transform: rotate(0);}
-  50% {transform: rotate(3600deg);}
+  50% {transform: rotate(60deg);}
   100% {transform: rotate(0);}
   }
