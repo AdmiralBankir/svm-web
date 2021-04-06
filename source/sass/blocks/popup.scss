@@ -36,9 +36,10 @@
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
-.popup .menu-toggle {
   width: 40px;
+
+  @include mobile-max {
+    width: 30px;
+  }
 }
 
