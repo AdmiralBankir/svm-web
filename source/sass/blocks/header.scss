@@ -270,7 +270,7 @@
   }
 }
 
-.header__main-link,
+.header__main-link[href],
 .header__geo-link,
 .header__link-wrapper {
   transition: opacity $time-transition $func-transition;

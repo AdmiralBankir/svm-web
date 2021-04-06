@@ -30,6 +30,10 @@ body {
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body--overflow {
   overflow: hidden;
 }
