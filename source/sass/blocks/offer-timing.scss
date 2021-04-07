@@ -12,7 +12,9 @@
 
 // Title
 .offer-timing h2 {
-  font-weight: normal;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  text-align: center;
   font-size: 34px;
   line-height: 44px;
   color: #232126;
@@ -45,7 +47,7 @@
   }
 }
 
-.offer-timing__list > li {
+.offer-timing__list>li {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -69,10 +71,18 @@
   font-weight: bold;
   margin-bottom: 20px;
   align-self: center;
+
+  @include mobile-max {
+    margin-bottom: 10px;
+  }
 }
 
 .offer-timing__text {
   text-align: center;
+
+  @include mobile-max {
+    font-size: 15px;
+  }
 }
 
 //Icons
@@ -89,7 +99,15 @@
 }
 
 @keyframes knock {
-  0% {transform: rotate(0);}
-  50% {transform: rotate(60deg);}
-  100% {transform: rotate(0);}
+  0% {
+    transform: rotate(0);
   }
+
+  50% {
+    transform: rotate(60deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

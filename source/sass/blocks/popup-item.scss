@@ -90,6 +90,7 @@
   @include mobile-max {
     display: grid;
     align-self: flex-start;
+    row-gap: 5px;
   }
 }
 

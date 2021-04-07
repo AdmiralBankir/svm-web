@@ -30,6 +30,10 @@
   padding: 10px;
   transition: linear box-shadow 0.3s;
   --hover-color: #f1c40f;
+
+  @include tablet-max {
+    padding: 0;
+  }
 }
 
 .products__item--gardens {
@@ -44,9 +48,11 @@
   --hover-color: #8b591c;
 }
 
-.products__item:hover {
-  box-shadow: 0 0 10px 10px var(--hover-color);
-  cursor: pointer;
+@include desktop-only {
+  .products__item:hover {
+    box-shadow: 0 0 10px 10px var(--hover-color);
+    cursor: pointer;
+  }
 }
 
 // Label
