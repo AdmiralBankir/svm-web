@@ -1,25 +1,21 @@
 // Section
 .offer-timing {
   background-color: rgba($color: #111822, $alpha: 0.1);
-  padding-top: 58px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 
-  @include tablet-max {
-    padding-top: 35px;
-    padding-bottom: 45px;
-  }
+  // @include tablet-max {
+  //   padding-top: 35px;
+  //   padding-bottom: 45px;
+  // }
 }
 
 // Title
-.offer-timing h2 {
-  font-weight: bold;
-  letter-spacing: -0.01em;
-  text-align: center;
-  font-size: 34px;
-  line-height: 44px;
+.offer-timing .typography-h2 {
   color: #232126;
   margin: 0;
   margin-bottom: 35px;
+  text-align: center;
 
   @include tablet-max {
     font-size: 30px;
@@ -33,7 +29,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 109px;
+  column-gap: 50px;
   width: 100%;
 
   @include tablet-max {
@@ -56,8 +52,8 @@
 // Text
 .offer-timing__date,
 .offer-timing__text {
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
   margin: 0;
 
@@ -68,8 +64,10 @@
 }
 
 .offer-timing__date {
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 17px;
   align-self: center;
 
   @include mobile-max {

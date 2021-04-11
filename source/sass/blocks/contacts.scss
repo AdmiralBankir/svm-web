@@ -117,6 +117,7 @@
   text-decoration: none;
   display: block;
   color: #000000;
+  font-weight: 500;
   display: flex;
   align-items: center;
 
@@ -133,7 +134,7 @@
 
 // SVG icons
 .contacts__list svg {
-  width: 40px;
+  width: 30px;
   height: 40px;
   margin-right: 10px;
 }

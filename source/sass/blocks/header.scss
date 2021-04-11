@@ -86,23 +86,28 @@
   width: 24px;
   height: 24px;
   padding: 10px;
+  margin-right: -13px;
 }
 
 .header__tel-link {
   text-decoration: none;
-  font-size: 23px;
-  line-height: 34px;
   color: #000000;
   padding: 10px;
+  padding-bottom: 8px;
   margin: 0;
 }
 
 .header__geo-link {
   text-decoration: none;
-  font-size: 23px;
-  line-height: 34px;
   color: #000;
   position: relative;
+}
+
+.header__geo-link,
+.header__tel-link {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .header__geo-link,
@@ -112,7 +117,7 @@
 }
 
 .header__geo-link .header__logo-wrapper {
-  margin-right: 20px;
+  margin-right: 13px;
 
   @include tablet-max {
     margin-right: 0;
@@ -227,9 +232,11 @@
 .header__nav-link {
   display: block;
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
-  font-size: 23px;
-  line-height: 34px;
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 300;
   padding: 20px 0;
   transition: color, background-color $time-transition $func-transition;
 
@@ -239,8 +246,9 @@
   }
 
   @include mobile-max {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 25px;
+    font-weight: 500;
   }
 }
 
@@ -340,7 +348,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  transform: translateY(74px);
+  transform: translateY(52px);
   visibility: hidden;
   transition: visibility, max-height $time-transition $func-transition;
 

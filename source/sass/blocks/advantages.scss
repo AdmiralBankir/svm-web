@@ -1,6 +1,6 @@
 .advantages {
   background-color: $mid-grey-color;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 60px;
 }
 
@@ -29,10 +29,12 @@
 
 .advantages__name {
   font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
+  font-weight: 500;
+  font-size: 27px;
   line-height: 34px;
   color: #232124;
+  text-transform: uppercase;
+  letter-spacing: .03em;
 
   @include mobile-max {
     font-size: 27px;
@@ -42,10 +44,11 @@
 
 .advantages__desc {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 19px;
   line-height: 27px;
   color: #000000;
+  width: 90%;
 
   @include mobile-max {
     font-size: 18px;
@@ -58,7 +61,7 @@
 }
 
 .advantages__name {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .advantages__img-wrapper {
@@ -69,6 +72,7 @@
 
 .advantages__img-wrapper img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 
   @include mobile-max {
@@ -137,5 +141,9 @@
 
 .advantages__img-wrapper--oversize + .advantages__label {
   grid-row: span 2;
+}
+
+.advantages .typography-h2 {
+  margin-bottom: 30px;
 }
 

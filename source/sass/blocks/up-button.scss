@@ -1,0 +1,29 @@
+.up-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+  display: block;
+  position: sticky;
+  top: 92vh;
+  left: 1vw;
+  // opacity: 0.7;
+  transition: opacity $time-transition $func-transition,
+              scale $time-transition $func-transition;
+  transform: scale(0.5);
+}
+
+.up-button:hover {
+  opacity: 1;
+  transform: scale(0.7);
+}
+
+.up-button__icon {
+  transition: fill $time-transition $func-transition;
+  fill: rgb(233, 233, 233);
+}
+
+.up-button__icon:hover {
+  fill: $gold-color;
+}

@@ -1,5 +1,5 @@
 .main-banner {
-  background-image: url("../img/main-banner.jpg");
+  background-image: url("../img/main-banner-07.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -10,7 +10,7 @@
   }
 
   @include mobile-max {
-    background-image: url("../img/main-banner-mobile.jpg");
+    background-image: url("../img/main-banner-mobile-07.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     @media (orientation: portrait) {
@@ -24,21 +24,28 @@
 }
 
 .main-banner h1 {
-  font-size: 44px;
-  line-height: 60px;
-  color: #000000;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: calc(9vh - 23px);
+  font-size: 58px;
+  line-height: calc(7vh - 10px);
+  line-height: 53px;
+  font-weight: 700;
+  color: #ffff;
+  text-transform: uppercase;
   margin: 0;
-  padding: 15px;
-  background-image: linear-gradient(45deg, #ffffff, transparent);
-  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
+  padding: 0;
+  padding-left: 70px;
+  letter-spacing: 0.04em;
+  overflow: hidden;
 
   @include tablet-max {
     font-size: 40px;
-    line-height: 49px
+    line-height: 49px;
+    padding: 0;
   }
 
   @include mobile-max {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 35px;
   }
 }
@@ -46,4 +53,12 @@
 
 .main-banner .center-wrapper {
   padding-top: 50vh;
+
+  @include tablet-max {
+    padding-top: 73vh;
+  }
+
+  @include mobile-max {
+    padding-top: 50vh;
+  }
 }

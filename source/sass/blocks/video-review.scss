@@ -35,10 +35,11 @@
 .video-review__text-garant {
   font-size: 34px;
   line-height: 44px;
-  font-weight: bold;
+  font-weight: 500;
+  text-transform: uppercase;
   color: #232126;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 25px;
 
   @include tablet-max {
     font-size: 24px;
@@ -54,11 +55,12 @@
 }
 
 .video-review__text-desc {
+  width: 80%;
   font-size: 20px;
   line-height: 28px;
   color: #000000;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 auto;
+  margin-bottom: 36px;
 
   @include tablet-max {
     font-size: 18px;
