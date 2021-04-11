@@ -19,7 +19,7 @@
   cursor: pointer;
 
   @include mobile-max {
-    padding: 30px;
+    padding: 20px 20px 40px;
   }
 }
 
@@ -37,7 +37,7 @@
   letter-spacing: .03em;
 
   @include mobile-max {
-    font-size: 27px;
+    font-size: 14px;
     line-height: 32px;
   }
 }
@@ -51,7 +51,8 @@
   width: 90%;
 
   @include mobile-max {
-    font-size: 18px;
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -62,6 +63,10 @@
 
 .advantages__name {
   margin-bottom: 25px;
+
+  @include mobile-max {
+    margin-bottom: 8px;
+  }
 }
 
 .advantages__img-wrapper {
@@ -104,7 +109,7 @@
 }
 
 @include mobile-max {
-  .advantages__grid > div {
+  .advantages__grid>div {
     margin-bottom: 20px;
   }
 }
@@ -139,11 +144,15 @@
   }
 }
 
-.advantages__img-wrapper--oversize + .advantages__label {
+.advantages__img-wrapper--oversize+.advantages__label {
   grid-row: span 2;
 }
 
 .advantages .typography-h2 {
   margin-bottom: 30px;
-}
 
+  @include mobile-max {
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
+}

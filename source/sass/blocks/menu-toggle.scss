@@ -31,12 +31,14 @@
   &--on {
     position: relative;
     z-index: 22;
+    width: 15px;
 
     & > div {
       background: #ffffff;
+      height: 3px;
     }
       .menu-toggle__one {
-          transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(5px, 5px);
       }
 
       .menu-toggle__two {
