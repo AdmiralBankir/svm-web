@@ -241,7 +241,9 @@ document.addEventListener('click', (evt) => {
 
 'use strict';
 
-var ACCESS_TOKEN = '9qnog3j9gqncblcoz2c0p23t'; // Kendr
+// var ACCESS_TOKEN = '9qnog3j9gqncblcoz2c0p23t'; // Kendr
+
+var ACCESS_TOKEN  = 'sffnc7wze76t2g9auum60ey1'; //Info
 
 // var ACCESS_TOKEN = '9swrls8qun3f6i5y6ckzdlnl'; //admiral
 
