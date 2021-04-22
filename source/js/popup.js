@@ -7,7 +7,6 @@ function getItemsList() {
     .then(response => response.json())
     .then(json => {
       BANYA_INFOS = json;
-      console.log(BANYA_INFOS);
     })
 }
 
