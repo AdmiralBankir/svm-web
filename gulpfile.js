@@ -16,6 +16,8 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+// var pipeline = require('readable-stream').pipeline;
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
@@ -107,9 +109,18 @@ gulp.task('clean', function () {
   return del('build');
 });
 
+// gulp.task('compress', function () {
+//   return pipeline(
+//         gulp.src('source/js/script.js'),
+//         uglify(),
+//         gulp.dest('dist')
+//   );
+// });
+
 gulp.task('js', function () {
   return gulp.src('source/js/*.js')
     .pipe(concat('script.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('build/js'));
 });
 
