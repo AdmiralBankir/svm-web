@@ -16,7 +16,6 @@ function vkWidgetSetup() {
 };
 
 function getVkWidget() {
-  console.log('get VK!');
   vkWidgetInsert(document, 'script', 'vk_openapi_js');
   vkWidgetSetup();
 };
