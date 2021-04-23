@@ -1,5 +1,7 @@
 /* eslint-disable */
 
+var isSetup = false;
+
 function vkWidgetInsert(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -16,8 +18,11 @@ function vkWidgetSetup() {
 };
 
 function getVkWidget() {
-  vkWidgetInsert(document, 'script', 'vk_openapi_js');
-  vkWidgetSetup();
+  if(!isSetup) {
+    vkWidgetInsert(document, 'script', 'vk_openapi_js');
+    vkWidgetSetup();
+    isSetup = true;
+  }
 };
 
 var options = {
