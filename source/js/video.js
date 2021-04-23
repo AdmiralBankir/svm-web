@@ -77,5 +77,8 @@ var createVideo = (id) => {
   playBtn.addEventListener('click', () => onVideoItemClick(item));
 };
 
-createVideo(VIDEO_ID);
+
+if(video) {
+  createVideo(VIDEO_ID);
+}
 
