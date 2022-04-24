@@ -61,6 +61,10 @@
   --hover-color: #8b591c;
 }
 
+.products__item--homes {
+  --hover-color: #1c8b7c;
+}
+
 @include desktop-only {
   .products__item:hover {
     box-shadow: 0 0 10px 10px var(--hover-color);
