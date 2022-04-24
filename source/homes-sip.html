@@ -61,7 +61,7 @@
           <div class="menu-toggle__three"></div>
         </button>
 
-        <a class="header__main-link">
+        <a href="index.html" class="header__main-link">
           <img width="125" height="125" src="./img/logo-black.png" alt="Логотип СВ Модуль">
         </a>
 
@@ -136,7 +136,7 @@
   </header>
 
   <main class="page-main">
-    <div class="main-banner">
+    <div class="main-banner main-banner--gardens">
       <div class="center-wrapper">
         <h1>
           СВ модуль производство и
@@ -145,6 +145,160 @@
         </h1>
       </div>
     </div>
+    <section class="products" id="products-homes">
+      <div class="center-wrapper">
+        <h2 class="typography-h2">Дома из СИП - панелей</h2>
+        <ul class="products_list">
+          <li class="products__item products__item--decor" id-product="wine">
+
+            <picture>
+              <img width="240" height="180" src="./img/wine-1@1x.jpg" alt="Фото собранного изделия">
+            </picture>
+
+            <div class="products__info">
+              <div class="products__label">
+                <p class="products__name">Винный комплект</p>
+                <p class="products__cost">3000 ₽</p>
+              </div>
+
+              <p class="products__description">
+                Прекрасный подарок к любой дате!
+              </p>
+            </div>
+
+          </li>
+        </ul>
+    </section>
+    <section class="contacts">
+      <div class="center-wrapper">
+        <h2 class="typography-h2">Наши контакты</h2>
+
+        <div class="contacts__main">
+          <div class="contacts__list-wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--whatsapp">
+                <a href="tel:+79103302815">
+                  <span class="visually-hidden">Наш контактный телефон</span>
+                  <svg width="60" height="60">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg>
+                  <span class="contacts__item-text">+7 (910) 330-28-15</span>
+                </a>
+              </li>
+
+              <li class="contacts__item contacts__item--vk">
+                <a href="https://vk.com/svmodul32">
+                  <span class="visually-hidden">Мы во ВКонтакте</span>
+                  <svg width="60" height="60">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                  <span class="contacts__item-text">https://vk.com/svmodul32</span>
+                </a>
+              </li>
+
+              <li class="contacts__item contacts__item--email">
+                <a href="mailto:info@sv-modul.ru" rel="nofollow">
+                  <span class="visually-hidden">Наш электронный адрес</span>
+                  <svg width="60" height="60">
+                    <use xlink:href="#icon-email"></use>
+                  </svg>
+                  <span class="contacts__item-text">info@sv-modul.ru</span>
+                </a>
+              </li>
+
+              <li class="contacts__item">
+                <a href="https://yandex.ru/maps/?ll=34.322588%2C53.214356&amp;mode=search&amp;sll=30.315635%2C59.938951&amp;sspn=0.986023%2C0.263572&amp;text=%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB.%2C%20%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D1%81.%D0%A1%D1%83%D0%BF%D0%BE%D0%BD%D0%B5%D0%B2%D0%BE%2C%20%D1%83%D0%BB.%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B5%2C%2055%2C%20%D0%BA.1.&amp;z=17"
+                  rel="nofollow">
+                  <span class="visually-hidden">Наши координаты</span>
+                  <svg width="60" height="60">
+                    <use xlink:href="#icon-map-pin"></use>
+                  </svg>
+                  <span class="contacts__item-text">Брянская обл.,<br> с. Супонево, ул.Фрунзе, 55, к. 1.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contacts__vk">
+            <div class="contacts__vk-widget" id="vk_post_-190718443_50"></div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="center-wrapper">
+      <p class="footer__copyright">
+        © sv-modul.ru, <span class="footer__year">2021</span>
+      </p>
+    </div>
+  </footer>
+
+  <div class="popup-item popup">
+    <button class="popup-item__cls-btn menu-toggle menu-toggle--on" type="button">
+      <div class="menu-toggle__one"></div>
+      <div class="menu-toggle__two"></div>
+      <div class="menu-toggle__three"></div>
+    </button>
+    <div class="popup-item__content">
+    </div>
+    <button class="popup__offer popup-item__offer-btn" type="button">Заказать</button>
+  </div>
+
+  <div class="popup popup--form">
+    <button class="form-popup__cls-btn menu-toggle menu-toggle--on" type="button">
+      <div class="menu-toggle__one"></div>
+      <div class="menu-toggle__two"></div>
+      <div class="menu-toggle__three"></div>
+    </button>
+
+    <form class="offer-form" id="offerForm">
+
+      <div class="offer-form__form-name">
+        <label class="visually-hidden" for="name">Имя</label>
+        <input type="text" id="name" name="user-name" placeholder="Имя" required>
+      </div>
+
+      <div class="offer-form__form-phone">
+        <label class="visually-hidden" for="phone-number">Телефон</label>
+        <input type="tel" id="phone-number" name="user-phone-number" pattern="^(\s*)?(\+)?([-()+]?\d[-()+]?)*(\s*)?$"
+          minlength="10" placeholder="Телефон" required>
+      </div>
+
+      <div class="offer-form__title">
+        <p>Ваш заказ:</p>
+      </div>
+
+      <div class="offer-form__offer-desc">
+      </div>
+
+      <div class="offer-form__form-send">
+        <button class="offer-form__btn popup-item__offer-btn" type="submit" id="formSend">
+          <div class="offer-form__loader lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <span>Отправить</span>
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="overlay"></div>
+
+  <template id="message">
+    <div class="message">
+      <svg class="message__icon" width="24" height="24" viewBox="0 0 24 24">
+        <use class="message__icon-success" xlink:href="#icon-success"></use>
+        <use class="message__icon-error" xlink:href="#icon-cross"></use>
+      </svg>
+      <p class="message__text"></p>
+    </div>
+  </template>
+
+  <script src="js/script.js"></script>
   </main>
 </body>
 
