@@ -239,6 +239,7 @@
   font-weight: 300;
   padding: 20px 0;
   transition: color, background-color $time-transition $func-transition;
+  outline: none;
 
   @include tablet-max {
     padding-right: 50px;
@@ -252,18 +253,15 @@
   }
 }
 
-// .header__nav-link--current {
-//   @include desktop-only {
-//     font-weight: bold;
-//     color: $mid-black-color;
-//     background-color: #fff;
-//   }
+.header__nav-link:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
 
-//   @include mobile-max {
-//     color: $gold-color;
-//     text-decoration: underline;
-//   }
-// }
+
+.header__nav-link:focus + .header__nav-sub-list {
+  visibility: visible;
+}
 
 @include desktop-only {
 

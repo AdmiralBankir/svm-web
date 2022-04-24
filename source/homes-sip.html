@@ -16,14 +16,11 @@
   <link rel="preload" href="fonts/IBMPlexSans400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/IBMPlexSans500.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="preload" as="image" href="img/summerhouse-11@1x.jpg">
+  <link rel="preload" as="image" href="img/main-banner-07.jpg"
+    imagesrcset="img/main-banner-mobile-07.jpg 767w, img/main-banner-07.jpg 1900w" imagesizes="100vw">
 </head>
 
 <body>
-  <div style="display: none">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
-
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
@@ -51,6 +48,9 @@
   </noscript>
 
 
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
 
   <header class="header header--main">
     <div class="center-wrapper">
@@ -62,7 +62,6 @@
         </button>
 
         <a href="index.html" class="header__main-link">
-          <span class="visually-hidden">Ссылка на главную страницу</span>
           <img width="125" height="125" src="./img/logo-black.png" alt="Логотип СВ Модуль">
         </a>
 
@@ -100,48 +99,41 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item header__nav-item--sub">
-              <a class="header__nav-link header__nav-link--current">Садовые постройки</a>
+              <a class="header__nav-link" tabindex="0" aria-haspopup="true" aria-expanded="false">Садовые постройки</a>
               <ul class="header__nav-sub-list">
                 <li>
-                  <a class="header__nav-link" href="#products-gardens">Беседки</a>
+                  <a href="gardens.html#products-gardens" class="header__nav-link">Беседки</a>
                 </li>
                 <li>
-                  <a class="header__nav-link" href="#products-gardens">Туалеты</a>
+                  <a href=" gardens.html#products-gardens" class="header__nav-link">Туалеты</a>
                 </li>
               </ul>
             </li>
             <li class="header__nav-item header__nav-item--sub">
-              <a class="header__nav-link">Для птиц и животных</a>
+              <a class="header__nav-link" tabindex="0">Для птиц и животных</a>
               <ul class="header__nav-sub-list">
                 <li>
-                  <a class="header__nav-link" href="#products-animals">Вольеры для собак</a>
+                  <a href="gardens.html#products-animals" class="header__nav-link" href="#">Вольеры для собак</a>
                 </li>
                 <li>
-                  <a class="header__nav-link" href="#products-animals">Курятники</a>
+                  <a href="gardens.html#products-animals" class="header__nav-link" href="#">Курятники</a>
                 </li>
               </ul>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="index.html#products-banya">Бани</a>
+              <a class="header__nav-link" href="#products-banya">Бани</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#products-decor">Элементы декора</a>
+              <a class="header__nav-link" href="gardens.html#products-decor">Элементы декора</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="homes-sip.html#products-homes">Дома из СИП - панелей</a>
+              <a class="header__nav-link">Дома из СИП - панелей</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-
-  <!-- <button class="up-button" type="button">
-    <svg class="up-button__icon" width="36" height="36">
-      <use xlink:href="#icon-up"></use>
-    </svg>
-    <span class="visually-hidden">Наверх</span>
-  </button> -->
 
   <main class="page-main">
     <div class="main-banner main-banner--gardens">
@@ -153,123 +145,30 @@
         </h1>
       </div>
     </div>
-
-    <section class="products" id="products-gardens">
+    <section class="products" id="products-homes">
       <div class="center-wrapper">
-        <h2 class="typography-h2">Садовые постройки</h2>
+        <h2 class="typography-h2">Дома из СИП - панелей</h2>
         <ul class="products_list">
-          <li class="products__item products__item--gardens" id-product="summerhouse">
+          <li class="products__item products__item--homes" id-product="homes-sip">
 
             <picture>
-              <img width="240" height="180" src="./img/summerhouse-7@1x.jpg" alt="Фото собранной беседки">
+              <img width="240" height="180" src="./img/homes-preview.jpg" alt="Фото собранного изделия">
             </picture>
 
             <div class="products__info">
               <div class="products__label">
-                <p class="products__name">Беседка</p>
-                <p class="products__cost">48000 ₽</p>
+                <!-- <p class="products__name">Примеры домов из СИП - панелей</p> -->
+                <p class="products__cost">Цена: по запросу</p>
               </div>
 
               <p class="products__description">
-                Габариты: 3,8х2,4х2,6м. Металлический каркас. Отделка: финкраска, масловоск.
-              </p>
-            </div>
-
-          </li>
-
-          <li class="products__item products__item--gardens" id-product="toilet">
-
-            <picture>
-              <source type="image/webp" srcset="./img/toilet-prev@1x.webp 1x, ./img/toilet-prev@2x.webp 2x">
-              <img width="240" height="180" src="./img/toilet-prev@1x.jpg" srcset="./img/toilet-prev@2x.jpg 2x"
-                alt="Фото собранного туалета">
-            </picture>
-
-            <div class="products__info">
-              <div class="products__label">
-                <p class="products__name">Туалет дачный</p>
-                <p class="products__cost">19900 ₽</p>
-              </div>
-
-              <p class="products__description">
-                Туалет дачный торфяной.
-                Современное решение туалета без мух и запахов.
+                Если вы решили построить себе дом из СИП-панелей, то вы обратились по адресу. Имея многолетний опыт и прямые поставки с завода, мы обеспечим вам оптимальную цену, высокое качество и сжатые сроки строительства.
               </p>
             </div>
 
           </li>
         </ul>
     </section>
-
-    <section class="products" id="products-animals">
-      <div class="center-wrapper">
-        <h2 class="typography-h2">Для птиц и животных</h2>
-        <ul class="products_list">
-          <li class="products__item products__item--animals" id-product="chicken">
-
-            <picture>
-              <img width="240" height="180" src="./img/chicken-4@1x.jpg" alt="Фото собранного курятника">
-            </picture>
-
-            <div class="products__info">
-              <div class="products__label">
-                <p class="products__name">Курятник</p>
-                <p class="products__cost">19900 ₽</p>
-              </div>
-
-              <p class="products__description">
-                Курятник летний на 8 несушек.
-              </p>
-            </div>
-
-          </li>
-        </ul>
-    </section>
-
-    <section class="products" id="products-decor">
-      <div class="center-wrapper">
-        <h2 class="typography-h2">Элементы декора</h2>
-        <ul class="products_list">
-          <li class="products__item products__item--decor" id-product="wine">
-
-            <picture>
-              <img width="240" height="180" src="./img/wine-1@1x.jpg" alt="Фото собранного изделия">
-            </picture>
-
-            <div class="products__info">
-              <div class="products__label">
-                <p class="products__name">Винный комплект</p>
-                <p class="products__cost">3000 ₽</p>
-              </div>
-
-              <p class="products__description">
-                Прекрасный подарок к любой дате!
-              </p>
-            </div>
-
-          </li>
-
-          <li class="products__item products__item--decor" id-product="watch">
-
-            <picture>
-              <img width="240" height="180" src="./img/watch-1@1x.jpg" alt="Фото собранного изделия">
-            </picture>
-
-            <div class="products__info">
-              <div class="products__label">
-                <p class="products__name">Витрина для наручных часов</p>
-                <p class="products__cost">2000 ₽</p>
-              </div>
-
-              <p class="products__description">
-                Отлично подойдёт, как подарок для ваших близких и прекрасно украсит ваш интерьер
-              </p>
-            </div>
-
-          </li>
-        </ul>
-    </section>
-
     <section class="contacts">
       <div class="center-wrapper">
         <h2 class="typography-h2">Наши контакты</h2>
@@ -400,6 +299,7 @@
   </template>
 
   <script src="js/script.js"></script>
+  </main>
 </body>
 
 </html>
